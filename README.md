@@ -2,6 +2,10 @@
 
 An analysis of airline performance covering flight delays, cancellations, seasonal patterns, regional differences and passenger satisfaction. The goal is to find which airlines and months cause the most problems for passengers, and what the business should fix first.
 
+Author: Sandun Lakshan Ranathunga
+
+![Dashboard Overview](airline_performance_dashboard.png)
+
 ## Business Questions
 - Which airlines have the longest delays?
 - Which airlines cancel the most flights?
@@ -12,56 +16,75 @@ An analysis of airline performance covering flight delays, cancellations, season
 ## Key Numbers
 | Measure | Value |
 |---|---|
-| Average delay range across airlines | about 13 to 23 minutes |
-| Worst cancellation rate | 12.9% (Andes Fly) |
-| Best cancellation rate (named airlines) | 3.9% (Coral Wings) |
+| Average delay range across airlines | 13.0 to 22.8 minutes |
+| Worst cancellation rate | 12.93% (Andes Fly) |
+| Best cancellation rate (named airlines) | 3.91% (Coral Wings) |
 | Worst month for delays | August (19.6 min) |
 | Best month for delays | January (10.3 min) |
 
-## Dashboard Pages
+## Dashboard Pages & Visuals
 
-### 1. [Page name, e.g. Delay Analysis]
-[One line about what this page shows.]
+### 1. Average Delay by Airline
+Compares the average delay minutes across different carriers, highlighting which airlines struggle most with schedule adherence.
 
-![Page 1](screenshots/1-page-name.png)
+![Average Delay by Airline](1_average_delay_by_airline.png)
 
-### 2. [Page name, e.g. Cancellations]
-[One line about what this page shows.]
+### 2. Cancellation Rate
+Examines the percentage of canceled flights per airline to reveal reliability gaps independent of delay durations.
 
-![Page 2](screenshots/2-page-name.png)
+![Cancellation Rate](2_cancellation_rate.png)
 
-### 3. [Page name, e.g. Passenger Satisfaction]
-[One line about what this page shows.]
+### 3. Monthly Delay Trend
+Tracks seasonal variations in average delay minutes across the year to identify peak operational stress periods.
 
-![Page 3](screenshots/3-page-name.png)
+![Monthly Delay Trend](3_monthly_delay_trend.png)
+
+### 4. Distance vs. Delay
+Explores the correlation between flight distance (Km) and average delay times.
+
+![Distance vs Delay](4_distance_vs_delay.png)
+
+### 5. Customer Satisfaction by Feedback Category
+Analyzes passenger survey scores broken down by feedback category and passenger class.
+
+![Customer Satisfaction by Feedback Category](5_customer_satisfaction_by_feedback.png)
+
+### 6. Operational Performance by Origin City (Map)
+Visualizes geographical clusters of delay and operational metrics across global origin cities.
+
+![Operational Performance by Origin City](6_operational_performance_map.png)
 
 ## Key Findings
 
-1. **Delays are fairly even across airlines, but "Unknown" is the worst.** Average delay runs from about 13 minutes (Kestrel Air) to about 23 minutes ("Unknown"). Among named airlines, SavannaJet (19.8), Iberic Air (19.6) and Cedar Air (18.9) are the worst.
-2. **Cancellations are a bigger gap than delays.** Andes Fly has the highest rate (12.9%), then Cedar Air (12.1%) and Northern Wing (11.4%). Coral Wings is the lowest among named airlines (3.9%).
-3. **Delays and cancellations are not the same problem.** Northern Wing has low delays (14.8 min) but a high cancellation rate. Andes Fly is mid-range on delay but worst on cancellations. Only Cedar Air and SavannaJet are weak on both.
-4. **Delays have a seasonal pattern.** January is the lowest (10.3 min). August is the peak (19.6), with March (18.3) and December (18.9) also high. July and October dip to about 16.
-5. **The map shows regional clusters.** Average delay by origin city ranges from 14.1 to 19.3 minutes. The worse (red) circles are mostly in Europe, the US east coast and East Asia. The better (green) ones are in Australia, Africa/Middle East and parts of Asia.
-6. **Satisfaction is lowest on a few specific things.** First class rates "Value for money" lowest (3.2) and "Baggage handling" low (3.4). Comfort is the weakest category overall (3.5 to 3.75). First class rates "On-time performance" highest (4.4).
+1. **Delays are fairly even across airlines, but "Unknown" is the worst.** Average delay runs from 13.0 minutes (Kestrel Air) to 22.8 minutes ("Unknown"). Among named airlines, SavannaJet (19.8 min), Iberic Air (19.6 min) and Cedar Air (18.9 min) lead the delays.
+2. **Cancellations are a bigger gap than delays.** Andes Fly has the highest cancellation rate (12.93%), followed closely by Cedar Air (12.12%) and Northern Wing (11.36%). Coral Wings achieves the lowest cancellation rate among named airlines at 3.91%.
+3. **Delays and cancellations are not the same problem.** Northern Wing maintains relatively low delays (14.8 min) alongside high cancellations. Conversely, Andes Fly exhibits mid-range delays but the worst cancellation rate. Only Cedar Air and SavannaJet perform poorly on both fronts.
+4. **Delays have a clear seasonal pattern.** January records the lowest delays (10.3 min), whereas August peaks at 19.6 min, with March (18.3 min) and December (18.9 min) also experiencing severe delays.
+5. **The map shows regional clusters.** Average delays by origin city range between 14.1 and 19.3 minutes. Higher-delay (red) clusters concentrate primarily in Europe, the US East Coast, and East Asia, while better-performing (green) regions appear in Australia, Africa/Middle East, and select parts of Asia.
+6. **Satisfaction is lowest on specific touchpoints.** First class rates "Value for money" lowest (3.20) and "Baggage handling" low (3.40). Comfort stands out as the weakest overall category across classes (3.50 to 3.75), whereas First class rates "On-time performance" highest (4.40).
 
 ## Recommendations
 
-1. **Fix cancellations first**, especially at Andes Fly, Cedar Air and Northern Wing. A cancelled flight is a bigger problem for a passenger than a 15-minute delay.
-2. **Target the worst airlines on both measures.** Cedar Air and SavannaJet need a scheduling and resource review.
-3. **Plan for peak months.** Add extra staff, buffer time and spare aircraft before August, March and December.
-4. **Focus on the weak touchpoints:** First class value for money, baggage handling and comfort.
-5. **Fix the "Unknown" airline records.** They have the worst delay, so the data should be cleaned before decisions are made.
+1. **Fix cancellations first**, targeting Andes Fly, Cedar Air, and Northern Wing. A cancellation causes significantly more disruption to passengers than a minor delay.
+2. **Target the worst airlines on both measures.** Cedar Air and SavannaJet require an immediate scheduling, resource, and operational review.
+3. **Plan proactively for peak months.** Increase staff levels, optimize buffer times, and secure spare aircraft prior to August, March, and December.
+4. **Focus on weak touchpoints:** Improve First Class value perception, baggage handling efficiency, and overall cabin comfort.
+5. **Clean the data records for "Unknown" airlines.** Given they record the longest average delays, data hygiene must be prioritized before making strategic investments.
 
 ## Tools Used
-- [Power BI / Tableau / Python / Excel: write what you used]
+- Tableau Public
+- Python / Pandas (Data pre-processing)
 
 ## Data
-[Name and source of the dataset]
+- **Dataset:** Airline Performance, Flights, and Customer Satisfaction Survey Datasets (Public / Educational Analytics Dataset)
 
 ## How to Open
-1. Download `[file-name]` from this repository.
-2. Open it in [tool name].
+1. Download the `G04_EDS2233_Workbook.twbx` file from this repository.
+2. Open it using **Tableau Desktop** or **Tableau Public Reader**.
 
 ## Author
-Sandun Lakshan Ranathunga
+**Sandun Lakshan Ranathunga**  
 Business Analytics Undergraduate
+
+---
+*Built with AI assistance. Analysis and dashboard design completed independently.*
