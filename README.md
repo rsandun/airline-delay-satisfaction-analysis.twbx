@@ -4,7 +4,7 @@ An analysis of airline performance covering flight delays, cancellations, season
 
 Author: Sandun Lakshan Ranathunga
 
-![Dashboard Overview](airline_performance_dashboard.png)
+![Dashboard Overview](PHOTO-2026-11-08-11-52-44.jpg)
 
 ## Business Questions
 - Which airlines have the longest delays?
@@ -27,32 +27,32 @@ Author: Sandun Lakshan Ranathunga
 ### 1. Average Delay by Airline
 Compares the average delay minutes across different carriers, highlighting which airlines struggle most with schedule adherence.
 
-![Average Delay by Airline](1_average_delay_by_airline.png)
+![Average Delay by Airline](PHOTO-2026-11-08-11-54-16.jpg)
 
 ### 2. Cancellation Rate
 Examines the percentage of canceled flights per airline to reveal reliability gaps independent of delay durations.
 
-![Cancellation Rate](2_cancellation_rate.png)
+![Cancellation Rate](PHOTO-2026-11-08-11-56-06.jpg)
 
 ### 3. Monthly Delay Trend
 Tracks seasonal variations in average delay minutes across the year to identify peak operational stress periods.
 
-![Monthly Delay Trend](3_monthly_delay_trend.png)
+![Monthly Delay Trend](PHOTO-2026-11-08-12-02-20.jpg)
 
 ### 4. Distance vs. Delay
 Explores the correlation between flight distance (Km) and average delay times.
 
-![Distance vs Delay](4_distance_vs_delay.png)
+![Distance vs Delay](PHOTO-2026-11-08-12-02-20%202.jpg)
 
 ### 5. Customer Satisfaction by Feedback Category
 Analyzes passenger survey scores broken down by feedback category and passenger class.
 
-![Customer Satisfaction by Feedback Category](5_customer_satisfaction_by_feedback.png)
+![Customer Satisfaction by Feedback Category](PHOTO-2026-11-08-12-04-47.jpg)
 
 ### 6. Operational Performance by Origin City (Map)
 Visualizes geographical clusters of delay and operational metrics across global origin cities.
 
-![Operational Performance by Origin City](6_operational_performance_map.png)
+![Operational Performance by Origin City](PHOTO-2026-11-08-12-06-41.jpg)
 
 ## Key Findings
 
