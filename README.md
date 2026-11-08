@@ -79,7 +79,7 @@ Visualizes geographical clusters of delay and operational metrics across global 
 - **Dataset:** Airline Performance, Flights, and Customer Satisfaction Survey Datasets (Public / Educational Analytics Dataset)
 
 ## How to Open
-1. Download the `G04_EDS2233_Workbook.twbx` file from this repository.
+1. Download the 'Airline_Performance_Analysis.twbx' file from this repository.
 2. Open it using **Tableau Desktop** or **Tableau Public Reader**.
 
 ## Author
