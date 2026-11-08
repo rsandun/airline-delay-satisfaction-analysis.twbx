@@ -4,7 +4,7 @@ An analysis of airline performance covering flight delays, cancellations, season
 
 Author: Sandun Lakshan Ranathunga
 
-![Dashboard Overview](PHOTO-2026-11-08-11-52-44.jpg)
+![Dashboard Overview](airline_performance_dashboard.png.jpg)
 
 ## Business Questions
 - Which airlines have the longest delays?
